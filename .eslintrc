@@ -1,0 +1,58 @@
+{
+	// "plugins": ["prettier"],
+	"parser": "babel-eslint",
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true
+	},
+	"extends": ["airbnb", "airbnb/hooks", "prettier"],
+	"rules": {
+		"consistent-return": "off",
+		"jsx-a11y/control-has-associated-label": "off",
+		// "jsx-a11y/label-has-for": "off",
+		"no-restricted-globals": ["error", "event", "fdescribe"],
+		"no-alert": 0,
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-noninteractive-element-interactions": "off",
+		"jsx-a11y/label-has-associated-control": "off",
+		"react/jsx-props-no-spreading": "off",
+		"import/extensions": "off",
+		"max-classes-per-file": "off",
+		"react/prefer-stateless-function": "off",
+		"react/state-in-constructor": "off",
+		"react/no-array-index-key": "off",
+		"object-shorthand": "off",
+		"react/no-unused-state": "off",
+		"lines-between-class-members": "off",
+		"import/named": "off",
+		"import/prefer-default-export": "off",
+		"react/self-closing-comp": "off",
+		"arrow-body-style": "off",
+		"no-tabs": "off",
+		"func-names": "off",
+		"eol-last": "off",
+		"no-debugger": "off",
+		"no-console": 0,
+		"no-unused-vars": "warn",
+		// "no-unused-vars": ["warn", {"args": "all"}],
+		"linebreak-style": "off",
+		"no-plusplus": "off",
+		"no-empty-function": "off",
+		"no-useless-constructor": "off",
+		"import/order": "off",
+		"react/jsx-indent": "off",
+		"react/prop-types": "off",
+		"react/jsx-filename-extension": "off",
+		"prefer-const": [
+			"error",
+			{
+				"destructuring": "any",
+				"ignoreReadBeforeAssign": true
+			}
+		],
+		// "prefer-const": "off",
+		"quotes": "off"
+	}
+}
+// "eslint:recommended"
