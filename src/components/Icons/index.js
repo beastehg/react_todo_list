@@ -1,0 +1,6 @@
+export {default as ListSvg} from "./ListSvg.jsx"
+export {default as AddSvg} from "./AddSvg.jsx"
+export {default as CheckSvg} from "./CheckSvg.jsx"
+export {default as CloseSvg} from "./CloseSvg.jsx"
+export {default as EditSvg} from "./EditSvg.jsx"
+export {default as RemoveSvg} from "./RemoveSvg.jsx"
