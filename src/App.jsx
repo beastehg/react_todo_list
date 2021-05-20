@@ -1,6 +1,6 @@
 import React from "react"
 import List from "./components/List"
-import {ListSvg} from "./components/Icons"
+import {ListSvg, AddSvg} from "./components/Icons"
 
 function App() {
 	return (
@@ -13,19 +13,27 @@ function App() {
 						active: true
 					}
 				]} />
+				<List
+					items={[
+						{
+							color: "green",
+							name: "Покупки 1"
+						},
+						{
+							color: "blue",
+							name: "Покупки 2"
+						},
+						{
+							color: "pink",
+							name: "Покупки 3"
+						},
+					]}
+					itemIsRemovable />
 				<List items={[
 					{
-						color: "green",
-						name: "Покупки 1"
-					},
-					{
-						color: "blue",
-						name: "Покупки 2"
-					},
-					{
-						color: "pink",
-						name: "Покупки 3"
-					},
+						icon: AddSvg(),
+						name: "Добавить список"
+					}
 				]} />
 			</div>
 			<div className="todo__content">
