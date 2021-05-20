@@ -1,5 +1,28 @@
 .list {
 	margin-bottom: 30px;
+
+	&:last-of-type {
+		margin: 15px;
+	}
+
+	&__add-button {
+		&:hover span,
+		&:hover path {
+			color: black;
+			stroke: black;
+		}
+
+		path {
+			stroke: gray;
+			transition: 0.3s stroke ease-in-out;
+		}
+
+		span {
+			color: #767678;
+			transition: 0.3s color ease-in-out;
+		}
+	}
+
 	li {
 		display: flex;
 		align-items: center;
@@ -12,34 +35,20 @@
 			border-radius: 4px;
 		}
 
-		i {
-			display: inline-flex;
-			margin-right: 8px;
-		}
-
-		svg {
-			path {
-				fill: gray;
-			}
-		}
-
 		.badge {
 			position: relative;
 			left: 4px;
-			width: 10px;
-			height: 10px;
-			border-radius: 20px;
+		}
 
-			&--green {
-				background-color: #42b883;
-			}
+		i {
+			display: inline-flex;
+			margin-right: 14px;
+		}
 
-			&--blue {
-				background-color: #64c4ed;
-			}
-
-			&--pink {
-				background-color: #ffbbcc;
+		svg {
+			margin-right: 10px;
+			path {
+				fill: gray;
 			}
 		}
 	}

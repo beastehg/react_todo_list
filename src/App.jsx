@@ -1,6 +1,11 @@
 import React from "react"
 import List from "./components/List"
-import {ListSvg, AddSvg} from "./components/Icons"
+import {ListSvg} from "./components/Icons"
+import AddList from "./components/AddList"
+
+// Assets
+import dataBase from "./assets/db.json"
+
 
 function App() {
 	return (
@@ -29,12 +34,9 @@ function App() {
 						},
 					]}
 					itemIsRemovable />
-				<List items={[
-					{
-						icon: AddSvg(),
-						name: "Добавить список"
-					}
-				]} />
+				<AddList
+					colors={dataBase.colors}
+				/>
 			</div>
 			<div className="todo__content">
 

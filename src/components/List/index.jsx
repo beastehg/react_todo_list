@@ -1,22 +1,36 @@
+/* eslint-disable no-unneeded-ternary */
 import React from "react"
+import classNames from "classnames"
+
+import Badge from "../Badge"
 
 // SCSS
 import "./List.scss"
 
-function List({items, itemIsRemovable}) {
+function List({items, itemIsRemovable, onShowPopup}) {
 	return (
-		<ul className="list">
+		<ul
+			className="list"
+			onClick={
+				onShowPopup
+					? () => onShowPopup()
+					: false}>
 			{
-				items.map(({icon, name, color, active}, index) => (
-					<li key={index} className={active ? "active" : ""}>
-						<i>
-							{icon || <i className={`badge badge--${color}`}></i>}
-						</i>
+				items.map(({icon, name, color, active, className}, index) => (
+					// <li key={index} className={active ? "active" : `${className}`}>
+					<li
+						key={index}
+						className={
+							classNames(className, {
+								active: active
+							})
+						}>
+						{icon ? icon : <Badge color={color} />}
 						<span>{name}</span>
 					</li>
 				))
 			}
-		</ul>
+		</ul >
 	)
 }
 
